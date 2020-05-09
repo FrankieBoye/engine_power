@@ -4,11 +4,11 @@ class Cylinders extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cylinderOption: ""
+      cylinderOption: 0
     };
   }
 
-  handleOptionChange = changeEvent => {
+  handleCylinderChange = changeEvent => {
     this.setState({
       cylinderOption: parseInt(changeEvent.target.value)
     });
@@ -26,7 +26,7 @@ class Cylinders extends Component {
         name="cyls"
         value="4"
         checked={this.state.cylinderOption===4}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       4 cylinders
@@ -40,7 +40,7 @@ class Cylinders extends Component {
         name="cyls"
         value="5"
         checked={this.state.cylinderOption===5}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       5 cylinders
@@ -54,7 +54,7 @@ class Cylinders extends Component {
         name="cyls"
         value="6"
         checked={this.state.cylinderOption===6}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       6 cylinders
@@ -68,7 +68,7 @@ class Cylinders extends Component {
         name="cyls"
         value="8"
         checked={this.state.cylinderOption===8}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       8 cylinders
@@ -82,7 +82,7 @@ class Cylinders extends Component {
         name="cyls"
         value="10"
         checked={this.state.cylinderOption===10}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       10 cylinders
@@ -96,7 +96,7 @@ class Cylinders extends Component {
         name="cyls"
         value="12"
         checked={this.state.cylinderOption===12}
-        onChange={this.handleOptionChange}
+        onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
       12 cylinders
