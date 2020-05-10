@@ -3,15 +3,14 @@ import React, { Component } from 'react'
 class Cylinders extends Component {
   constructor(props) {
     super(props);
+    this.handleCylinderChange = this.handleCylinderChange.bind(this)
     this.state = {
       cylinderOption: 0
     };
   }
 
-  handleCylinderChange = changeEvent => {
-    this.setState({
-      cylinderOption: parseInt(changeEvent.target.value)
-    });
+  handleCylinderChange(e){
+    this.setState({cylinderOption: parseInt(e.target.value)});
   }
 
   render() {
@@ -25,7 +24,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="4"
-        checked={this.state.cylinderOption===4}
+        // checked={this.state.cylinderOption===4}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
@@ -39,7 +38,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="5"
-        checked={this.state.cylinderOption===5}
+        // checked={this.state.cylinderOption===5}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
@@ -53,7 +52,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="6"
-        checked={this.state.cylinderOption===6}
+        // checked={this.state.cylinderOption===6}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
@@ -67,7 +66,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="8"
-        checked={this.state.cylinderOption===8}
+        // checked={this.state.cylinderOption===8}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
@@ -81,7 +80,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="10"
-        checked={this.state.cylinderOption===10}
+        // checked={this.state.cylinderOption===10}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
@@ -95,7 +94,7 @@ class Cylinders extends Component {
         type="radio"
         name="cyls"
         value="12"
-        checked={this.state.cylinderOption===12}
+        // checked={this.state.cylinderOption===12}
         onChange={this.handleCylinderChange}
         className="cylinder-input"
       />
