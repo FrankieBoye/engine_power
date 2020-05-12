@@ -12,6 +12,10 @@ class Cylinders extends Component {
   // handleCylinderChange(event){
   //   this.setState({cylinderOption: parseInt(event.target.value)});
   // }
+  handleCylinderChange(event){
+    this.props.handleCylinderChange(event.target.value)
+    // this.setState({cylinderOption: event.target.value});
+  }
 
   render() {
     return (
