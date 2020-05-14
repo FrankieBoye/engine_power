@@ -102,7 +102,6 @@ class Cylinders extends Component {
       12 cylinders
     </label>
   </div>
-
 </form>
 
     )
