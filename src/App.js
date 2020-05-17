@@ -42,6 +42,7 @@ class App extends Component {
         </br>
         <Capacity
         capacity={this.state.capacity}
+        cylinderOption={this.state.cylinderOption}
         onCapacityChange={this.handleCapacityChange} />
       </div>
     )
