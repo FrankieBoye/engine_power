@@ -6,8 +6,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleCapacityChange = this.handleCapacityChange.bind(this);
+    this.handleCylinderChange = this.handleCylinderChange.bind(this);
     this.state = {
-      capacity: 2
+      capacity: 2,
+      cylinderOption: 0
     }
   }
 
@@ -15,8 +17,11 @@ class App extends Component {
     this.setState({capacity})
   }
 
+  handleCylinderChange(cylinderOption){
+    this.setState({cylinderOption})
+  }
+
   render() {
-    // const {capacity} = this.state
     return (
       <div className="App">
         <h1>Engine power</h1>
@@ -25,7 +30,9 @@ class App extends Component {
         </br>
         <br>
         </br>
-        <Cylinders/>
+        <Cylinders
+        cylinderOption={this.state.cylinderOption}
+        onCylinderChange={this.handleCylinderChange}/>
         <br>
         </br>
         Enter the capacity:
@@ -34,7 +41,6 @@ class App extends Component {
         <br>
         </br>
         <Capacity
-        // capacity={capacity}
         capacity={this.state.capacity}
         onCapacityChange={this.handleCapacityChange} />
       </div>
