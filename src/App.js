@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Cylinders from './Cylinders'
 import Capacity from './Capacity'
+import Output from './Output'
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +45,14 @@ class App extends Component {
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}
         onCapacityChange={this.handleCapacityChange} />
+        <br>
+        </br>
+        <br>
+        </br>
+        Output:
+        <Output
+        capacity={this.state.capacity}
+        cylinderOption={this.state.cylinderOption}/>
       </div>
     )
   }
