@@ -16,12 +16,16 @@ class Output extends React.Component {
       output = (((cylinderOption*26)-40)/2 * capacity)
     } else if (cylinderOption==10){
       output = (((cylinderOption*24)-40)/2 * capacity)
-    } else {
+    } else if ((cylinderOption==12)) {
       output = (((cylinderOption*18)-40)/2 * capacity)
+    } else {
+      output = 0
     }
+
     return (
       <div className="output">
-      Output: {output.toFixed(0)} bhp
+      Output:<br></br>
+      {output.toFixed(0)} bhp
       </div>
     )
   }
