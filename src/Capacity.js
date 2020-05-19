@@ -29,10 +29,15 @@ class Capacity extends Component {
   }
 
    return (
-     <form name="capacity">
+     <div className="capacity">
+     Enter the capacity:
+     <br></br>
+     <br></br>
      {input}
+     <br></br>
+     <br></br>
      {capacity} litres
-     </form>
+     </div>
   )
  }
 }

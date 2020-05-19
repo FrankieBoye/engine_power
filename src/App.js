@@ -26,30 +26,15 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Engine power</h1>
-        Select the number of cylinders:
-        <br>
-        </br>
-        <br>
-        </br>
         <Cylinders
         cylinderOption={this.state.cylinderOption}
         onCylinderChange={this.handleCylinderChange}/>
-        <br>
-        </br>
-        Enter the capacity:
-        <br>
-        </br>
-        <br>
-        </br>
+        <br></br>
         <Capacity
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}
         onCapacityChange={this.handleCapacityChange} />
-        <br>
-        </br>
-        <br>
-        </br>
-        Output:
+        <br></br>
         <Output
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}/>

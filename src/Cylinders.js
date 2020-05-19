@@ -17,6 +17,8 @@ class Cylinders extends Component {
 <form>
 
   <div className="cylinders">
+  Select the number of cylinders:
+  <br></br>
     <label>
       <input
         type="radio"
@@ -28,9 +30,7 @@ class Cylinders extends Component {
       />
       4 cylinders
     </label>
-  </div>
-
-  <div className="cylinders">
+    <br></br>
     <label>
       <input
         type="radio"
@@ -42,9 +42,7 @@ class Cylinders extends Component {
       />
       5 cylinders
     </label>
-  </div>
-
-  <div className="cylinders">
+    <br></br>
     <label>
       <input
         type="radio"
@@ -56,9 +54,7 @@ class Cylinders extends Component {
       />
       6 cylinders
     </label>
-  </div>
-
-  <div className="cylinders">
+    <br></br>
     <label>
       <input
         type="radio"
@@ -70,9 +66,7 @@ class Cylinders extends Component {
       />
       8 cylinders
     </label>
-  </div>
-
-  <div className="cylinders">
+    <br></br>
     <label>
       <input
         type="radio"
@@ -84,9 +78,7 @@ class Cylinders extends Component {
       />
       10 cylinders
     </label>
-  </div>
-
-  <div className="cylinders">
+    <br></br>
     <label>
       <input
         type="radio"
