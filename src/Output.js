@@ -24,7 +24,6 @@ class Output extends React.Component {
 
     return (
       <div className="output">
-      Output:<br></br>
       {output.toFixed(0)} bhp
       </div>
     )

@@ -30,7 +30,7 @@ class Capacity extends Component {
 
    return (
      <div className="capacity">
-     Enter the capacity:
+     capacity:
      <br></br>
      <br></br>
      {input}
