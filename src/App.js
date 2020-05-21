@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Cylinders from './Cylinders'
-import Capacity from './Capacity'
-import Output from './Output'
+import Cylinders from './components/Cylinders'
+import Capacity from './components/Capacity'
+import Output from './components/Output'
 
 class App extends Component {
   constructor(props) {

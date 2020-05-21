@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Engine Power is a React application that will give you the expected power output of an engine. You can enter various paramaters to alter the results.
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/44870179/82542494-f98e6c80-9b49-11ea-91a5-ae6df14d7fab.png)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+> git clone
+git@github.com:FrankieBoye/engine_power.git
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> cd engine_power
 
-### `npm test`
+> npm start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Open http://localhost:3000 if it doesn't load automatically
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Configurable Options
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Select the number of cylinders
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Select from 4, 5, 6, 8, 10 or 12 cylinders. It is not the case that more cylinders automatically equates to more power!
 
-### `npm run eject`
+#### Capacity
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The capacity that can be chosen varies depending on the cylinder count. There is no such thing as a 5 litre 4 cylinder engine or a 12 cylinder 1 litre engine for example.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4 and 5 cylinder engines can range from 1 litre to 2.5 litres.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+6 cylinder engines can range from 2.5 litres to 4 litres.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8 cylinder engines can range from 4 litres to 8 litres.
 
-## Learn More
+10 cylinder engines can range from 5 litres to 8 litres.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+12 cylinder engines can range from 5 litres to 7 litres.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Aspiration
 
-### Code Splitting
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### Turbo boost pressure
 
-### Analyzing the Bundle Size
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+#### Supercharger pulley options
 
-### Making a Progressive Web App
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+#### Camshaft options
 
-### Advanced Configuration
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+#### Air filters options
 
-### Deployment
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+#### Exhaust Options
 
-### `npm run build` fails to minify
+To be completed
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Application background
+
+How the figures for the formulas came about, real life cars certain figures are based on etc.
+
+To be completed
+
+
+## Testing
+
+To be completed
+
+
+|      TECH STACK                                      |
+|    :------:                                          |
+|JavaScript \| ReactJS
