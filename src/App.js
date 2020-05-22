@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Cylinders from './components/Cylinders'
 import Capacity from './components/Capacity'
 import Output from './components/Output'
+import Aspiration from './components/Aspiration'
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,8 @@ class App extends Component {
         <Output
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}/>
+        <br></br>
+        <Aspiration/>
       </div>
     )
   }
