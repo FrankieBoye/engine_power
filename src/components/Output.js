@@ -4,19 +4,20 @@ class Output extends React.Component {
   render() {
   const {capacity} = this.props;
   const {cylinderOption} = this.props;
+  const {boostPressure} = this.props;
   var output = 0
 
-    if(cylinderOption==4){
-      output = (((cylinderOption*50))/2 * capacity)
-    } else if (cylinderOption==5){
+    if(cylinderOption===4){
+      output = (((cylinderOption*50))/2 * capacity * (1+boostPressure))
+    } else if (cylinderOption===5){
       output = (((cylinderOption*40)-40)/2 * capacity)
-    } else if (cylinderOption==6){
+    } else if (cylinderOption===6){
       output = (((cylinderOption*36)-40)/2 * capacity)
-    } else if (cylinderOption==8){
-      output = (((cylinderOption*26)-40)/2 * capacity)
-    } else if (cylinderOption==10){
+    } else if (cylinderOption===8){
+      output = (((cylinderOption*26)-40)/2 * capacity * (1+boostPressure*0.4))
+    } else if (cylinderOption===10){
       output = (((cylinderOption*24)-40)/2 * capacity)
-    } else if ((cylinderOption==12)) {
+    } else if ((cylinderOption===12)) {
       output = (((cylinderOption*18)-40)/2 * capacity)
     } else {
       output = 0

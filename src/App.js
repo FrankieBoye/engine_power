@@ -48,6 +48,7 @@ class App extends Component {
         onCapacityChange={this.handleCapacityChange} />
         <br></br>
         <Output
+        boostPressure={this.state.boost}
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}/>
         <br></br>
