@@ -4,6 +4,7 @@ class Aspiration extends Component {
   constructor(props) {
     super(props);
     this.handleAspChange = this.handleAspChange.bind(this)
+    this.reset = this.reset.bind(this)
     this.state = {
       aspiration: "NA",
     }
@@ -21,8 +22,13 @@ class Aspiration extends Component {
     this.props.onBoostChange(parseFloat(boost))
   }
 
+  reset() {
+    const boost = 0
+    this.props.resetState(boost)
+  }
+
   render() {
-    const{boostPressure} = this.props;
+    var{boostPressure} = this.props;
 
     var boost = <input id="boost" type="range" min="0.5" max="2.0" step="0.1" defaultValue="0.5" onInput={this.onInput.bind(this)}/>
 
@@ -41,6 +47,7 @@ class Aspiration extends Component {
            value="NA"
            checked={this.state.aspiration === "NA"}
            onChange={this.handleAspChange}
+           onClick={this.reset}
          />
          NA
        </label>
