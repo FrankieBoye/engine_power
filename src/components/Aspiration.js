@@ -5,7 +5,7 @@ class Aspiration extends Component {
     super(props);
     this.handleAspChange = this.handleAspChange.bind(this)
     this.state = {
-      aspiration: "1"
+      aspiration: "NA",
     }
   }
 
@@ -15,7 +15,20 @@ class Aspiration extends Component {
     })
   }
 
+  onInput() {
+    var input = document.getElementById("boost");
+    var boost = input.value;
+    this.props.onBoostChange(parseFloat(boost))
+  }
+
   render() {
+    const{boostPressure} = this.props;
+
+    var boost = <input id="boost" type="range" min="0.5" max="2.0" step="0.1" defaultValue="0.5" onInput={this.onInput.bind(this)}/>
+
+    if(this.state.aspiration === "NA"){
+      boost = <input type="range" defaultValue="0" disabled/>
+    }
 
    return (
      <div className="aspiration">
@@ -25,8 +38,8 @@ class Aspiration extends Component {
          <input
            type="radio"
            name="asp"
-           value="1"
-           checked={this.state.aspiration === "1"}
+           value="NA"
+           checked={this.state.aspiration === "NA"}
            onChange={this.handleAspChange}
          />
          NA
@@ -36,11 +49,20 @@ class Aspiration extends Component {
          <input
            type="radio"
            name="asp"
-           value="2"
-           checked={this.state.aspiration === "2"}
+           value="Turbo"
+           checked={this.state.aspiration === "Turbo"}
            onChange={this.handleAspChange}
          />
          Turbo
+       </label>
+       <br></br>
+       <br></br>
+       <label>
+       Boost pressure:
+       {boost}
+       <br></br>
+       <br></br>
+       {boostPressure.toFixed(1)}
        </label>
      </div>
   )

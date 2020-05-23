@@ -9,9 +9,11 @@ class App extends Component {
     super(props);
     this.handleCapacityChange = this.handleCapacityChange.bind(this);
     this.handleCylinderChange = this.handleCylinderChange.bind(this);
+    this.handleBoostChange = this.handleBoostChange.bind(this);
     this.state = {
       capacity: 2,
-      cylinderOption: 0
+      cylinderOption: 0,
+      boost: 0
     }
   }
 
@@ -21,6 +23,10 @@ class App extends Component {
 
   handleCylinderChange(cylinderOption){
     this.setState({cylinderOption})
+  }
+
+  handleBoostChange(boost){
+    this.setState({boost})
   }
 
   render() {
@@ -40,7 +46,9 @@ class App extends Component {
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}/>
         <br></br>
-        <Aspiration/>
+        <Aspiration
+        boostPressure={this.state.boost}
+        onBoostChange={this.handleBoostChange}/>
       </div>
     )
   }
