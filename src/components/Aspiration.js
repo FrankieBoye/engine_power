@@ -5,6 +5,7 @@ class Aspiration extends Component {
     super(props);
     this.handleAspChange = this.handleAspChange.bind(this)
     this.reset = this.reset.bind(this)
+    this.defaultBoost = this.defaultBoost.bind(this)
     this.state = {
       aspiration: "NA",
     }
@@ -23,8 +24,13 @@ class Aspiration extends Component {
   }
 
   reset() {
-    const boost = 0
-    this.props.resetState(boost)
+    const noBoost = 0
+    this.props.resetState(noBoost)
+  }
+
+  defaultBoost() {
+    const defaultBoost = 0.5
+    this.props.addBoost(defaultBoost)
   }
 
   render() {
@@ -59,6 +65,7 @@ class Aspiration extends Component {
            value="Turbo"
            checked={this.state.aspiration === "Turbo"}
            onChange={this.handleAspChange}
+           onClick={this.defaultBoost}
          />
          Turbo
        </label>

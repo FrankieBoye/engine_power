@@ -10,6 +10,7 @@ class App extends Component {
     this.handleCapacityChange = this.handleCapacityChange.bind(this);
     this.handleCylinderChange = this.handleCylinderChange.bind(this);
     this.handleBoostChange = this.handleBoostChange.bind(this);
+    this.defaultBoost = this.defaultBoost.bind(this)
     this.reset = this.reset.bind(this);
     this.state = {
       capacity: 2,
@@ -34,6 +35,11 @@ class App extends Component {
     this.setState({boost})
   }
 
+  defaultBoost(boost){
+    this.setState({boost})
+  }
+
+
   render() {
     return (
       <div className="App">
@@ -55,7 +61,8 @@ class App extends Component {
         <Aspiration
         boostPressure={this.state.boost}
         onBoostChange={this.handleBoostChange}
-        resetState={this.reset}/>
+        resetState={this.reset}
+        addBoost={this.defaultBoost}/>
       </div>
     )
   }
