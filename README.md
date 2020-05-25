@@ -2,7 +2,7 @@
 
 Engine Power is a React application that will give you the expected power output of an engine. You can enter various paramaters to alter the results.
 
-![image](https://user-images.githubusercontent.com/44870179/82542494-f98e6c80-9b49-11ea-91a5-ae6df14d7fab.png)
+![image](https://user-images.githubusercontent.com/44870179/82842821-e88b8580-9ed2-11ea-8106-78e254a552e8.png)
 
 ## Getting Started
 
