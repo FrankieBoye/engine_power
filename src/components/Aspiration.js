@@ -30,15 +30,15 @@ class Aspiration extends Component {
 
   defaultBoost() {
     const defaultBoost = 0.5
-    this.props.addBoost(defaultBoost)
+    this.props.addBoost(defaultBoost);
   }
 
   render() {
     var{boostPressure} = this.props;
 
-    var boost = <input id="boost" type="range" min="0.5" max="1.5" step="0.1" defaultValue="0.5" onInput={this.onInput.bind(this)}/>
-
-    if(this.state.aspiration === "NA"){
+    if(this.state.aspiration === "Turbo"){
+      var boost = <input id="boost" type="range" min="0.5" max="1.4" step="0.1" defaultValue="0.5" onInput={this.onInput.bind(this)}/>
+    } else {
       boost = <input type="range" defaultValue="0" disabled/>
     }
 
@@ -73,8 +73,9 @@ class Aspiration extends Component {
        <br></br>
        <label>
        Boost pressure:
-       {boost}
        <br></br>
+       <br></br>
+       {boost}
        <br></br>
        {(boostPressure).toFixed(1)}
        </label>
