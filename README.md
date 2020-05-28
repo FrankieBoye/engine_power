@@ -22,7 +22,7 @@ git@github.com:FrankieBoye/engine_power.git
 
 #### Select the number of cylinders
 
-Select from 4, 5, 6, 8, 10 or 12 cylinders. It is not the case that more cylinders automatically equates to more power!
+Select from 4, 5, 6, 8, 10 or 12 cylinders.
 
 #### Capacity
 

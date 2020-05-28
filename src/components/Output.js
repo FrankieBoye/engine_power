@@ -10,15 +10,15 @@ class Output extends React.Component {
     if(cylinderOption===4){
       output = (((cylinderOption*50))/2 * capacity * (1+boostPressure))
     } else if (cylinderOption===5){
-      output = (((cylinderOption*40)-40)/2 * capacity)
+      output = (((cylinderOption*40))/2 * capacity * (1+boostPressure*0.4))
     } else if (cylinderOption===6){
-      output = (((cylinderOption*36)-40)/2 * capacity)
+      output = (((cylinderOption*36)-20)/2 * capacity * (1+boostPressure*0.5))
     } else if (cylinderOption===8){
       output = (((cylinderOption*26)-40)/2 * capacity * (1+boostPressure*0.4))
     } else if (cylinderOption===10){
-      output = (((cylinderOption*24)-40)/2 * capacity)
+      output = (((cylinderOption*24)-40)/2 * capacity * (1+boostPressure*0.3))
     } else if ((cylinderOption===12)) {
-      output = (((cylinderOption*18)-40)/2 * capacity)
+      output = (((cylinderOption*18)-15)/2 * capacity * (1+boostPressure*0.3))
     } else {
       output = 0
     }
