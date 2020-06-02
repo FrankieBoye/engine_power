@@ -1,8 +1,8 @@
 ## Introduction
 
-Engine Power is a React application that will give you the expected power output of an engine. You can enter various paramaters to alter the results.
+Engine Power is a React application that allows you to play around with various engine parameters and get an idea of the resulting horsepower.
 
-![image](https://user-images.githubusercontent.com/44870179/82842821-e88b8580-9ed2-11ea-8106-78e254a552e8.png)
+![image](https://user-images.githubusercontent.com/44870179/83575933-7f39f100-a528-11ea-8add-59f5c27586f4.png)
 
 ## Getting Started
 
@@ -40,15 +40,15 @@ The capacity that can be chosen varies depending on the cylinder count. There is
 
 #### Aspiration
 
-To be completed
+Work in progress
 
 #### Turbo boost pressure
 
-To be completed
+Work in progress
 
-#### Supercharger pulley options
+#### Supercharger option
 
-To be completed
+Work in progress
 
 #### Camshaft options
 
