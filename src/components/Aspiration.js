@@ -6,6 +6,7 @@ class Aspiration extends Component {
     this.handleAspChange = this.handleAspChange.bind(this)
     this.reset = this.reset.bind(this)
     this.defaultBoost = this.defaultBoost.bind(this)
+    this.superchargerBoost = this.superchargerBoost.bind(this)
     this.state = {
       aspiration: "NA",
     }
@@ -33,6 +34,11 @@ class Aspiration extends Component {
     this.props.addBoost(defaultBoost);
   }
 
+  superchargerBoost() {
+    const defaultBoost = 0.9
+    this.props.addBoost(defaultBoost);
+  }
+
   render() {
     var{boostPressure} = this.props;
 
@@ -46,6 +52,7 @@ class Aspiration extends Component {
      <div className="aspiration">
      Select the aspiration:
      <br></br>
+     <br></br>
        <label>
          <input
            type="radio"
@@ -57,6 +64,7 @@ class Aspiration extends Component {
          />
          NA
        </label>
+       <br></br>
        <br></br>
        <label>
          <input
@@ -72,13 +80,25 @@ class Aspiration extends Component {
        <br></br>
        <br></br>
        <label>
-       Boost pressure:
+         <input
+           type="radio"
+           name="asp"
+           value="Supercharger"
+           onChange={this.handleAspChange}
+           onClick={this.superchargerBoost}
+         />
+         Supercharger
+       </label>
        <br></br>
+       <br></br>
+       <label>
+       Boost pressure:
        <br></br>
        {boost}
        <br></br>
        {(boostPressure).toFixed(1)}
        </label>
+       <br></br>
      </div>
   )
  }
