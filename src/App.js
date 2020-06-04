@@ -11,6 +11,7 @@ class App extends Component {
     this.handleCylinderChange = this.handleCylinderChange.bind(this);
     this.handleBoostChange = this.handleBoostChange.bind(this);
     this.defaultBoost = this.defaultBoost.bind(this)
+    this.handleDefaultCap = this.handleDefaultCap.bind(this)
     this.reset = this.reset.bind(this);
     this.state = {
       capacity: 2,
@@ -39,6 +40,10 @@ class App extends Component {
     this.setState({boost})
   }
 
+  handleDefaultCap(capacity){
+    this.setState({capacity})
+  }
+
 
   render() {
     return (
@@ -46,7 +51,8 @@ class App extends Component {
         <h1>engine options:</h1>
         <Cylinders
         cylinderOption={this.state.cylinderOption}
-        onCylinderChange={this.handleCylinderChange}/>
+        onCylinderChange={this.handleCylinderChange}
+        onDefaultCap={this.handleDefaultCap}/>
         <br></br>
         <Capacity
         capacity={this.state.capacity}

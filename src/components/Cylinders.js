@@ -7,7 +7,8 @@ class Cylinders extends Component {
   }
 
   handleCylinderChange(onChange) {
-    this.props.onCylinderChange(parseInt(onChange.target.value))
+    this.props.onCylinderChange(parseInt(onChange.target.value));
+    this.props.onDefaultCap(parseInt(onChange.target.name))
   }
 
   render() {
@@ -22,7 +23,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="2"
         value="4"
         checked={cylinderOption === 4}
         onChange={this.handleCylinderChange}
@@ -34,7 +35,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="2"
         value="5"
         checked={cylinderOption === 5}
         onChange={this.handleCylinderChange}
@@ -46,7 +47,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="3"
         value="6"
         checked={cylinderOption === 6}
         onChange={this.handleCylinderChange}
@@ -58,7 +59,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="5"
         value="8"
         checked={cylinderOption === 8}
         onChange={this.handleCylinderChange}
@@ -70,7 +71,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="6"
         value="10"
         checked={cylinderOption === 10}
         onChange={this.handleCylinderChange}
@@ -82,7 +83,7 @@ class Cylinders extends Component {
     <label>
       <input
         type="radio"
-        name="cyls"
+        name="6"
         value="12"
         checked={cylinderOption === 12}
         onChange={this.handleCylinderChange}
