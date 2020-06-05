@@ -26,17 +26,23 @@ class Aspiration extends Component {
 
   reset() {
     const noBoost = 0
+    const chargerBoost = 0
     this.props.resetState(noBoost)
+    this.props.removeChargerboost(chargerBoost)
   }
 
   defaultBoost() {
     const defaultBoost = 0.5
+    const chargerBoost = 0
     this.props.addBoost(defaultBoost);
+    this.props.removeChargerboost(chargerBoost)
   }
 
   superchargerBoost() {
-    const defaultBoost = 0.9
-    this.props.addBoost(defaultBoost);
+    const boost = 0.9
+    const noBoost = 0
+    this.props.superchargerBoost(boost);
+    this.props.resetState(noBoost)
   }
 
   render() {
@@ -76,6 +82,15 @@ class Aspiration extends Component {
            onClick={this.defaultBoost}
          />
          Turbo
+         <br></br>
+         <label>
+         Boost pressure:
+         <br></br>
+         {boost}
+         <br></br>
+         {(boostPressure).toFixed(1)}
+         </label>
+
        </label>
        <br></br>
        <br></br>
@@ -89,16 +104,7 @@ class Aspiration extends Component {
          />
          Supercharger
        </label>
-       <br></br>
-       <br></br>
-       <label>
-       Boost pressure:
-       <br></br>
-       {boost}
-       <br></br>
-       {(boostPressure).toFixed(1)}
-       </label>
-       <br></br>
+
      </div>
   )
  }

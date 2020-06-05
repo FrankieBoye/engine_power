@@ -10,13 +10,14 @@ class App extends Component {
     this.handleCapacityChange = this.handleCapacityChange.bind(this);
     this.handleCylinderChange = this.handleCylinderChange.bind(this);
     this.handleBoostChange = this.handleBoostChange.bind(this);
-    this.defaultBoost = this.defaultBoost.bind(this)
-    this.handleDefaultCap = this.handleDefaultCap.bind(this)
+    this.chargerBoost = this.chargerBoost.bind(this);
+    this.handleDefaultCap = this.handleDefaultCap.bind(this);
     this.reset = this.reset.bind(this);
     this.state = {
-      capacity: 2,
+      capacity: "",
       cylinderOption: 0,
-      boost: 0
+      boost: 0,
+      superchargerBoost: 0
     }
   }
 
@@ -36,8 +37,8 @@ class App extends Component {
     this.setState({boost})
   }
 
-  defaultBoost(boost){
-    this.setState({boost})
+  chargerBoost(superchargerBoost){
+    this.setState({superchargerBoost})
   }
 
   handleDefaultCap(capacity){
@@ -61,6 +62,7 @@ class App extends Component {
         <br></br>
         <Output
         boostPressure={this.state.boost}
+        superchargerPressure={this.state.superchargerBoost}
         capacity={this.state.capacity}
         cylinderOption={this.state.cylinderOption}/>
         <br></br>
@@ -68,7 +70,9 @@ class App extends Component {
         boostPressure={this.state.boost}
         onBoostChange={this.handleBoostChange}
         resetState={this.reset}
-        addBoost={this.defaultBoost}/>
+        addBoost={this.handleBoostChange}
+        superchargerBoost={this.chargerBoost}
+        removeChargerboost={this.chargerBoost}/>
       </div>
     )
   }
