@@ -2,7 +2,7 @@
 
 Engine Power is a React application that allows you to play around with various engine parameters and get an idea of the resulting horsepower.
 
-![image](https://user-images.githubusercontent.com/44870179/83575933-7f39f100-a528-11ea-8add-59f5c27586f4.png)
+![image](https://user-images.githubusercontent.com/44870179/83924342-5742cb80-a77c-11ea-9528-3822065a7358.png)
 
 ## Getting Started
 
@@ -28,7 +28,9 @@ Select from 4, 5, 6, 8, 10 or 12 cylinders.
 
 The capacity that can be chosen varies depending on the cylinder count. There is no such thing as a 5 litre 4 cylinder engine or a 12 cylinder 1 litre engine for example.
 
-4 and 5 cylinder engines can range from 1 litre to 2.5 litres.
+4 cylinder engines can range from 1 litre to 2.5 litres.
+
+5 cylinder engines can range from 2 litres to 3 litres.
 
 6 cylinder engines can range from 2.5 litres to 4 litres.
 
@@ -40,15 +42,17 @@ The capacity that can be chosen varies depending on the cylinder count. There is
 
 #### Aspiration
 
-Work in progress
+3 choices can be made:
+
+NA for normally aspirated.
+
+Turbo with variable boost levels.
+
+Supercharged.
 
 #### Turbo boost pressure
 
-Work in progress
-
-#### Supercharger option
-
-Work in progress
+This can be adjusted from 0.5 bar to 1.4 bar.
 
 #### Camshaft options
 
