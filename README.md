@@ -2,7 +2,7 @@
 
 Engine Power is a React application that allows you to play around with various engine parameters and get an idea of the resulting horsepower.
 
-![image](https://user-images.githubusercontent.com/44870179/83924342-5742cb80-a77c-11ea-9528-3822065a7358.png)
+![image](https://user-images.githubusercontent.com/44870179/83954883-e9160b80-a844-11ea-8177-6b7afc934089.png)
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ The capacity that can be chosen varies depending on the cylinder count. There is
 
 NA for normally aspirated.
 
-Turbo with variable boost levels.
+Turbo - with variable boost range.
 
 Supercharged.
 
