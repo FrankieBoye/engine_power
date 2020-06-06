@@ -49,7 +49,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>engine options:</h1>
+        <h1>Engine options</h1>
         <Cylinders
         cylinderOption={this.state.cylinderOption}
         onCylinderChange={this.handleCylinderChange}
