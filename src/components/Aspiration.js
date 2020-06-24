@@ -5,7 +5,7 @@ class Aspiration extends Component {
     super(props);
     this.handleAspChange = this.handleAspChange.bind(this)
     this.reset = this.reset.bind(this)
-    this.defaultBoost = this.defaultBoost.bind(this)
+    this.defaultTurboBoost = this.defaultTurboBoost.bind(this)
     this.superchargerBoost = this.superchargerBoost.bind(this)
     this.state = {
       aspiration: "NA",
@@ -21,7 +21,7 @@ class Aspiration extends Component {
   onInput() {
     var input = document.getElementById("boost");
     var boost = input.value;
-    this.props.onBoostChange(parseFloat(boost))
+    this.props.onTurboBoostChange(parseFloat(boost))
   }
 
   reset() {
@@ -31,10 +31,10 @@ class Aspiration extends Component {
     this.props.removeChargerboost(chargerBoost)
   }
 
-  defaultBoost() {
-    const defaultBoost = 0.5
+  defaultTurboBoost() {
+    const defaultTurboBoost = 0.5
     const chargerBoost = 0
-    this.props.addBoost(defaultBoost);
+    this.props.addTurboBoost(defaultTurboBoost);
     this.props.removeChargerboost(chargerBoost)
   }
 
@@ -79,7 +79,7 @@ class Aspiration extends Component {
            value="Turbo"
            checked={this.state.aspiration === "Turbo"}
            onChange={this.handleAspChange}
-           onClick={this.defaultBoost}
+           onClick={this.defaultTurboBoost}
          />
          Turbo
          <br></br>

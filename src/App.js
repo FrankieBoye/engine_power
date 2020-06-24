@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.handleCapacityChange = this.handleCapacityChange.bind(this);
     this.handleCylinderChange = this.handleCylinderChange.bind(this);
-    this.handleBoostChange = this.handleBoostChange.bind(this);
+    this.handleTurboBoostChange = this.handleTurboBoostChange.bind(this);
     this.chargerBoost = this.chargerBoost.bind(this);
     this.handleDefaultCap = this.handleDefaultCap.bind(this);
     this.reset = this.reset.bind(this);
@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({cylinderOption})
   }
 
-  handleBoostChange(boost){
+  handleTurboBoostChange(boost){
     this.setState({boost})
   }
 
@@ -68,9 +68,9 @@ class App extends Component {
         <br></br>
         <Aspiration
         boostPressure={this.state.boost}
-        onBoostChange={this.handleBoostChange}
+        onTurboBoostChange={this.handleTurboBoostChange}
         resetState={this.reset}
-        addBoost={this.handleBoostChange}
+        addTurboBoost={this.handleTurboBoostChange}
         superchargerBoost={this.chargerBoost}
         removeChargerboost={this.chargerBoost}/>
       </div>
